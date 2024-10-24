@@ -2,13 +2,17 @@
 
 /* Estilos principais */
 body {
-  font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #00b09b, #96c93d);
+  font-family: 'Poppins', sans-serif;  
+}
+
+main {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+  overflow: hidden;
 }
 
 .urna {
@@ -127,4 +131,16 @@ h2 {
 
 .check {
   font-size: 32px;
+}
+
+footer {
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
 }

@@ -7,44 +7,47 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="urna">
-        <div class="urna-container">
-            <!-- Teclado numérico -->
-            <div class="teclado">
-                <div class="numeros">
-                    <button onclick="digitar(1)">1</button>
-                    <button onclick="digitar(2)">2</button>
-                    <button onclick="digitar(3)">3</button>
-                    <button onclick="digitar(4)">4</button>
-                    <button onclick="digitar(5)">5</button>
-                    <button onclick="digitar(6)">6</button>
-                    <button onclick="digitar(7)">7</button>
-                    <button onclick="digitar(8)">8</button>
-                    <button onclick="digitar(9)">9</button>
-                    <button onclick="digitar(0)" class="minus-margin">0</button>
+    <main>
+        <div class="urna">
+            <div class="urna-container">
+                <!-- Teclado numérico -->
+                <div class="teclado">
+                    <div class="numeros">
+                        <button onclick="digitar(1)">1</button>
+                        <button onclick="digitar(2)">2</button>
+                        <button onclick="digitar(3)">3</button>
+                        <button onclick="digitar(4)">4</button>
+                        <button onclick="digitar(5)">5</button>
+                        <button onclick="digitar(6)">6</button>
+                        <button onclick="digitar(7)">7</button>
+                        <button onclick="digitar(8)">8</button>
+                        <button onclick="digitar(9)">9</button>
+                        <button onclick="digitar(0)" class="minus-margin">0</button>
+                    </div>
+                    <div class="comandos">
+                        <button class="btn-branco btn-hover" onclick="votoBranco()">Branco</button>
+                        <button class="btn-corrige btn-hover" onclick="corrige()">Corrige</button>
+                        <button class="btn-confirma btn-hover js-btn-confirma" onclick="confirma()">Confirma</button>
+                        <audio src="audios/confirma-urna.mp3" id="confirmAudio"></audio>
+                    </div>
                 </div>
-                <div class="comandos">
-                    <button class="btn-branco btn-hover" onclick="votoBranco()">Branco</button>
-                    <button class="btn-corrige btn-hover" onclick="corrige()">Corrige</button>
-                    <button class="btn-confirma btn-hover js-btn-confirma" onclick="confirma()">Confirma</button>
-
-                    <audio src="audios/confirma-urna.mp3" id="confirmAudio"></audio>
-                </div>
-            </div>
-
-            <!-- Display -->
-            <div class="display">
-                <h2>Digite o número do candidato</h2>
-                <input type="text" id="numeroCandidato" maxlength="2" disabled class="input-numero">
-                <div id="detalhesCandidato" class="detalhes-candidato">
-                    <!-- Detalhes do candidato aparecerão aqui -->
-                </div>
-                <div class="voto-confirmado">
-                  <p class="confirm-voto js-confirm-voto"></p>
+                <!-- Display -->
+                <div class="display">
+                    <h2>Digite o número do candidato</h2>
+                    <input type="text" id="numeroCandidato" maxlength="2" disabled class="input-numero">
+                    <div id="detalhesCandidato" class="detalhes-candidato">
+                        <!-- Detalhes do candidato aparecerão aqui -->
+                    </div>
+                    <div class="voto-confirmado">
+                      <p class="confirm-voto js-confirm-voto"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>Ver os resultados <a href="contagem.html">aqui</a>!</p>
+    </footer>
 
     <script src="scripts/script.js"></script>
 </body>
