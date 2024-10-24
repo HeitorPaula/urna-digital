@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos principais */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.urna {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.urna-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Estilos para o teclado */
+.teclado {
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teclado .numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dcdcdc;
+}
+
+.comandos {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-branco {
+  background-color: #f9f9f9;
+}
+
+.btn-corrige {
+  background-color: #f7be32;
+  color: #000;
+}
+
+.btn-confirma {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Estilos para o display (lado direito) */
+.display {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.input-numero {
+  font-size: 2.5rem;
+  width: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.detalhes-candidato {
+  margin-top: 10px;
+}
+
+.detalhes-candidato img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #000;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.minus-margin {
+  margin-right: -216%;
+}
+
+.confirm-voto {
+  color: #4caf50;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.check {
+  font-size: 32px;
+}
